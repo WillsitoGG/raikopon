@@ -1,0 +1,15 @@
+Current v3:
+official_v2.5.0_sha256=f790c1d81abf21af6d02cb5b350e254784349695688714a21846fff46eac4b33
+v3_sha256=81ec7aa5b73f347f9cb80d7899445b0cde51d693164d81c5529e1b674ab83638
+v3_patcher_blob=ffd56106f3096eaf01aa1c13c96f94d17f7be101
+
+Historical v1:
+published_sha256=9512fbe1a51c365d79fc0f46895445965ed06eb87394b9f4ef6209745fbadd55
+patcher_blob=e662e79c44ac37279a18435062d8176e069c3378
+
+Historical v2:
+published_sha256=4f1f6bc0411285c336ef62ad1ee9815aff9a1bc31e08c35a3429fb661c97f4b5
+patcher_blob=b49efa0de65b532446f812346c77269673b12779
+user_dir_blob=27ddea9927519a9e45ef5cf2a6bbeb836ab839e9
+
+Archive rule: a reconstructed v1/v2 NRO may be archived only if its SHA-256 exactly matches the corresponding published_sha256 value.

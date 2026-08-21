@@ -1,0 +1,25 @@
+name: Validate WillsitoGG Raikopon SD Path v3
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: willsito-tuning
+          fetch-depth: 0
+      - name: Reproduce and validate v3
+        shell: bash
+        run: bash .github/scripts/build-willsito-sdpath-v3.sh
+      - name: Upload validation output
+        uses: actions/upload-artifact@v4
+        with:
+          name: raikopon-v2.5.0-sdpath-v3-validation
+          path: raikopon-v3-output/
+          if-no-files-found: error
