@@ -1,0 +1,10 @@
+Raikopon v2.5.0 – Raikopon SD Path_v3
+Official NRO SHA-256: f790c1d81abf21af6d02cb5b350e254784349695688714a21846fff46eac4b33
+Final v3 NRO SHA-256: 81ec7aa5b73f347f9cb80d7899445b0cde51d693164d81c5529e1b674ab83638
+Exact patcher blob: ffd56106f3096eaf01aa1c13c96f94d17f7be101
+Change: only compiled default user root sdmc:/switch/azahar/ -> sdmc:/switch/raikopon/
+Executable/text segment: byte-for-byte official
+argv/direct-forwarder code: byte-for-byte official
+ROM-directory literal: byte-for-byte official
+user_dir.txt pointer literal: byte-for-byte official
+Hardware validation: final v3 was manually tested by Willsito on a real Nintendo Switch.

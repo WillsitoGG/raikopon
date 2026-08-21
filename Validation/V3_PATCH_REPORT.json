@@ -1,0 +1,19 @@
+{
+  "upstream": "Raibatsu/raikopon v2.5.0 official release asset raikopon.nro",
+  "input_sha256": "f790c1d81abf21af6d02cb5b350e254784349695688714a21846fff46eac4b33",
+  "output_sha256": "81ec7aa5b73f347f9cb80d7899445b0cde51d693164d81c5529e1b674ab83638",
+  "input_size": 45934357,
+  "output_size": 45934357,
+  "patched_offset": "0x13308B0",
+  "old": "sdmc:/switch/azahar/",
+  "new": "sdmc:/switch/raikopon/",
+  "changed_byte_positions_count": 9,
+  "only_default_user_root_literal_changed": true,
+  "entire_executable_text_segment_byte_identical_to_upstream": true,
+  "argv_and_direct_launch_code_byte_identical_to_upstream": true,
+  "rom_directory_literal_byte_identical_to_upstream": true,
+  "user_dir_pointer_literal_byte_identical_to_upstream": true,
+  "user_dir_pointer_required": false,
+  "physical_switch_forwarder_test_performed": false,
+  "nro_magic_valid": true
+}

@@ -1,0 +1,52 @@
+{
+  "upstream": "Raibatsu/raikopon v2.5.0 official release asset raikopon.nro",
+  "purpose": "Move Raikopon user-data selection and absolute internal debug logs to switch/raikopon while leaving ROM/argv handling exactly upstream",
+  "input_size": 45934357,
+  "output_size": 45934357,
+  "input_sha256": "f790c1d81abf21af6d02cb5b350e254784349695688714a21846fff46eac4b33",
+  "output_sha256": "4f1f6bc0411285c336ef62ad1ee9815aff9a1bc31e08c35a3429fb661c97f4b5",
+  "patched_literals": [
+    {
+      "label": "Dynarmic JIT log",
+      "offset": "0x12AF1F0",
+      "old": "sdmc:/switch/azahar/dynarmic_jit.log",
+      "new": "sdmc:/switch/raikopon/dynarmic_jit.log",
+      "growth_bytes": 2
+    },
+    {
+      "label": "Updater staging debug log",
+      "offset": "0x132EF98",
+      "old": "sdmc:/switch/azahar/update_staging_debug.log",
+      "new": "sdmc:/switch/raikopon/update_staging_debug.log",
+      "growth_bytes": 2
+    },
+    {
+      "label": "user_dir.txt lookup path",
+      "offset": "0x13308C8",
+      "old": "sdmc:/switch/azahar/user_dir.txt",
+      "new": "sdmc:/switch/raikopon/user_dir.txt",
+      "growth_bytes": 2
+    },
+    {
+      "label": "GPU frame log",
+      "offset": "0x136D0A0",
+      "old": "sdmc:/switch/azahar/gpu_frame_log.log",
+      "new": "sdmc:/switch/raikopon/gpu_frame_log.log",
+      "growth_bytes": 2
+    }
+  ],
+  "changed_byte_positions_count": 104,
+  "binary_delta_confined_to_internal_data_literals": true,
+  "default_user_dir_literal_preserved_from_upstream": true,
+  "default_rom_dir_literal_preserved_from_upstream": true,
+  "argv_direct_launch_regions_byte_identical": true,
+  "code_region_sha256": {
+    "IsLoadableRom": "5c0b3cc37a7bdd15ee1a036147e4097f235bc0456ff77fb6146ed0449f7c2763",
+    "ResolveRomPath_and_direct_launch": "5408d0f7601c44af0e154f4e20a956e188ddc6c6370ccfc10bf40150b027ee4d"
+  },
+  "old_prefix_occurrences_before": 11,
+  "old_prefix_occurrences_after": 7,
+  "new_prefix_occurrences_after": 4,
+  "nro_magic_valid": true,
+  "physical_switch_forwarder_test_performed": false
+}

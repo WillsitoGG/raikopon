@@ -1,0 +1,4 @@
+tag=v2.5.0
+name=[V2.5.0] Rewrote UI from scratch, Upstreamed to latest Azahar, Bug Fixes
+asset=raikopon.nro
+published_at=2026-08-18T10:18:59Z
