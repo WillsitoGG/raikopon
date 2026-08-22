@@ -1,3 +1,19 @@
+## WillsitoGG fork – changes / tuning notes
+
+This fork is intentionally kept very close to upstream. The custom Raikopon work associated with it is:
+
+- A minimal tuned build based on the official Raikopon v2.5.0 NRO.
+- The compiled default user-data root is changed from `sdmc:/switch/azahar/` to `sdmc:/switch/raikopon/`.
+- Paths supplied by games/forwarders through `argv` are not rewritten or redirected.
+- Executable/direct-forwarder logic remains byte-for-byte upstream; the binary delta is confined to the approved default path literal.
+- The current v3 tune does not require the earlier `user_dir.txt` workaround.
+
+The tuned binary is maintained separately from this source fork. `master` intentionally carries no source-level implementation of that binary-only path adjustment, apart from this explanatory README note. No upstream PR is currently open for this tune.
+
+> The original upstream README continues below and is intentionally kept unchanged.
+
+---
+
 <h1 align="center">Raika Azahar</h1>
 
 <p align="center">
